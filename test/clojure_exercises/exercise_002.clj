@@ -1,4 +1,4 @@
-(ns clojure-exercises.exercise-002.core-test
+(ns clojure-exercises.exercise-002
   (:require [clojure.test :refer :all]))
 
 ;; 4Clojure Question 2
