@@ -1,6 +1,6 @@
 # clojure-exercises
 
-Solutions to exercises from [4clojure](www.4clojure.com).
+Solutions to exercises from [4clojure](http://www.4clojure.com).
 
 ## Usage
 
