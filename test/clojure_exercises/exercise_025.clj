@@ -6,7 +6,7 @@
 ;; Write a function which returns only the odd numbers from a sequence.
 
 (def __
-  (fn [seq] (filter #(= (rem % 2) 1) seq))
+  #(filter odd? %)
   )
 
 (deftest tests
