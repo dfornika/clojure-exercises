@@ -1,4 +1,4 @@
-(ns clojure-exercises.template
+(ns clojure-exercises.exercise-017
   (:require [clojure.test :refer :all]))
 
 ;; 4Clojure Question 17
