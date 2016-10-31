@@ -5,7 +5,8 @@
 ;;
 ;; Write a function which returns the first X fibonacci numbers.
 
-(def __
+(defn __
+  [x]
   (loop [acc 1
          result []]
     (cond (> acc x) (lazy-seq result)
