@@ -6,13 +6,15 @@
 ;; Write a function which returns the first X fibonacci numbers.
 
 (def __
-  (defn fib [x]
-    (loop [acc 1
-           result '()]
-      (cond (> acc x) result
-            (< acc 3) (recur (inc acc) (conj result 1))
-            :else
-            (recur (inc acc) (conj result (fib (- acc)))))
+  (loop [acc 1
+         result []]
+    (cond (> acc x) (lazy-seq result)
+          (< acc 3) (recur (inc acc) (conj result 1))
+          :else
+          (recur (inc acc)
+                 (conj result
+                       (+ (last (butlast result))
+                          (last result))))))
   )
 
 (deftest tests
