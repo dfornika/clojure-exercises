@@ -7,8 +7,7 @@
 
 (defn __
   [x]
-  (apply concat (map #(repeat 2 %) x))
-  )
+  (apply concat (map #(repeat 2 %) x)))
 
 (deftest tests
   (is (= (__ [1 2 3]) '(1 1 2 2 3 3)))
