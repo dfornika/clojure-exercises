@@ -6,8 +6,7 @@
 ;; Write a function which returns a personalized greeting.
 
 (def __
-  #(str "Hello, " % "!")
-  )
+  #(str "Hello, " % "!"))
 
 (deftest tests
   (is (= (__ "Dave") "Hello, Dave!"))

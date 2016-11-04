@@ -7,9 +7,9 @@
 ;;
 ;; Restrictions (please don't use these function(s)): last
 
-(def __
-  (fn [x] (first (reverse x)))
-  )
+(defn __
+  [x]
+  (first (reverse x))))
 
 (deftest tests
   (is (= (__ [1 2 3 4 5]) 5))
