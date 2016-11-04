@@ -7,9 +7,7 @@
 ;;
 ;; <p>Note that there are two test cases, but you are expected to supply only one answer, which will cause all the tests to pass.</p>
 
-(def __
-  '(1 2 3 4)
-  )
+(def __ '(1 2 3 4))
 
 (deftest tests
   (is (= __ (conj '(2 3 4) 1)))

@@ -6,9 +6,7 @@
 ;; Lists can be constructed with either a function or a quoted form.
 
 ;; Note: dfornika 2016-10-26: Had to cheat a bit, can't def __ to three bare keywords
-(def __
-  '(:a :b :c)
-  )
+(def __ '(:a :b :c))
 
 (deftest tests
   (is (= (list :a :b :c) '(:a :b :c))))
