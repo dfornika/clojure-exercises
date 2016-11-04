@@ -7,7 +7,7 @@
 
 (defn __
   [x]
-  (first (rest (reverse x)))))
+  (first (rest (reverse x))))
 
 (deftest tests
   (is (= (__ (list 1 2 3 4 5)) 4))

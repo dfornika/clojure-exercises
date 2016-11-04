@@ -9,7 +9,7 @@
 
 (defn __
   [x]
-  (first (reverse x))))
+  (first (reverse x)))
 
 (deftest tests
   (is (= (__ [1 2 3 4 5]) 5))
