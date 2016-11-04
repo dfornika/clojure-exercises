@@ -15,8 +15,7 @@
           (recur (inc acc)
                  (conj result
                        (+ (last (butlast result))
-                          (last result))))))
-  )
+                          (last result)))))))
 
 (deftest tests
   (is (= (__ 3) '(1 1 2)))

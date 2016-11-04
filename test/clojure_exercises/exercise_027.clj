@@ -9,8 +9,8 @@
 
 (defn __
   [x]
-  (= (reverse x) (reverse (reverse x)))
-  )
+  (= (reverse x)
+     (reverse (reverse x))))
 
 (deftest tests
   (is (false? (__ '(1 2 3 4 5))))

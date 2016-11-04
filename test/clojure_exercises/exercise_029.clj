@@ -1,5 +1,6 @@
 (ns clojure-exercises.exercise-029
-  (:require [clojure.test :refer :all]))
+  (:require [clojure.test :refer :all]
+            [clojure.string :as string]))
 
 ;; 4Clojure Question 29
 ;;
@@ -7,8 +8,7 @@
 
 (defn __
   [x]
-  (clojure.string/join "" (re-seq #"[A-Z]" x))
-  )
+  (string/join "" (re-seq #"[A-Z]" x)))
 
 (deftest tests
   (is (= (__ "HeLlO, WoRlD!") "HLOWRD"))
