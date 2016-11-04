@@ -5,9 +5,7 @@
 ;;
 ;; Clojure has many different ways to create functions.
 
-(def __
-  8
-  )
+(def __ 8)
 
 (deftest tests
   (is (= __ ((fn add-five [x] (+ x 5)) 3)))

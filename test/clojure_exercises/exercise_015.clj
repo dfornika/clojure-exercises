@@ -5,9 +5,7 @@
 ;;
 ;; Write a function which doubles a number.
 
-(def __
-  #(* 2 %)
-  )
+(def __ #(* 2 %))
 
 (deftest tests
   (is (= (__ 2) 4))

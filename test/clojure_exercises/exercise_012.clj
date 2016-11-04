@@ -5,9 +5,7 @@
 ;;
 ;; All Clojure collections support sequencing.  You can operate on sequences with functions like first, second, and last.
 
-(def __
-  3
-  )
+(def __ 3)
 
 (deftest tests
   (is (= __ (first '(3 2 1))))
