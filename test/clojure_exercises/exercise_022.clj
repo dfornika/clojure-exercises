@@ -7,9 +7,9 @@
 ;;
 ;; Restrictions (please don't use these function(s)): count
 
-(def __
-  #(reduce (fn [a b] (inc a)) 0 %)
-  )
+(defn __
+  [x]
+  (reduce (fn [a b] (inc a)) 0 x))
 
 (deftest tests
   (is (= (__ '(1 2 3 3 1)) 5))

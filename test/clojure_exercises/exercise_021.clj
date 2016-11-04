@@ -7,9 +7,9 @@
 ;;
 ;; Restrictions (please don't use these function(s)): nth
 
-(def __
-  #(first (drop %2 %1))
-  )
+(defn __
+  [coll index]
+  (first (drop index coll)))
 
 (deftest tests
   (is (= (__ '(4 5 6 7) 2) 6))

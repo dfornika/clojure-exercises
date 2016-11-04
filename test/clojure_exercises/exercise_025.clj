@@ -5,9 +5,9 @@
 ;;
 ;; Write a function which returns only the odd numbers from a sequence.
 
-(def __
-  #(filter odd? %)
-  )
+(defn __
+  [x]
+  (filter odd? x))
 
 (deftest tests
   (is (= (__ #{1 2 3 4 5}) '(1 3 5)))

@@ -5,9 +5,9 @@
 ;;
 ;; Write a function which returns the sum of a sequence of numbers.
 
-(def __
-  #(reduce + 0 %)
-  )
+(defn __
+  [x]
+  (reduce + 0 x))
 
 (deftest tests
   (is (= (__ [1 2 3]) 6))

@@ -7,9 +7,9 @@
 ;;
 ;; Restrictions (please don't use these function(s)): reverse, rseq
 
-(def __
-  #(reduce conj '() %)
-  )
+(defn __
+  [x]
+  (reduce conj '() x))
 
 (deftest tests
   (is (= (__ [1 2 3 4 5]) [5 4 3 2 1]))
