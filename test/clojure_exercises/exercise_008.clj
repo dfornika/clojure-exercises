@@ -6,9 +6,7 @@
 ;;
 ;; Sets are collections of unique values.
 
-(def __
-  #{:a :b :c :d}
-  )
+(def __ #{:a :b :c :d})
 
 (deftest tests
   (is (= __ (set '(:a :a :b :c :c :c :c :d :d))))
